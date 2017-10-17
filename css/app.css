@@ -1,0 +1,10 @@
+/*Class to help us visualize the grid*/
+.boxHelper
+{
+	color: #fff;
+	background-color: #000;
+	text-align: center;
+}
+.hidden {
+	display: none;
+}
