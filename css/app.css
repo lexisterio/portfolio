@@ -1,10 +1,94 @@
 /*Class to help us visualize the grid*/
+body {
+	padding: 0;
+	margin: 0;
+}
+
 .boxHelper
 {
 	color: #fff;
 	background-color: #000;
 	text-align: center;
 }
-.hidden {
-	display: none;
+
+.home-row{
+	background-image: url(../images/bg_me.jpg);
+	background-size: cover;
+  height: 100vh;
+	display: flex;
+	align-items: center;
+}
+
+.home-banner {
+	max-width: 400px;
+	color: #d3a9ab;
+}
+
+h1 { /* This is a tag name so this style rule will apply to all tags of this name */
+
+}
+
+.about-me, .featured, .contact {
+	display: flex;
+	min-height: 200px;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.pink-boxes {
+	background-color: #d3a9ab;
+	color: #ffffff;
+}
+
+.underline {
+	text-decoration: underline;
+	font-family: sans-serif;
+}
+
+.big {
+	font-weight: 900;
+	font-size: 60px;
+	font-style: oblique;
+}
+
+.italic {
+	font-family: cursive;
+}
+
+.text-description {
+	background-color: #255d6e;
+	color: #fff;
+	padding: 20px 3%;
+	/* padding to push the content of the div inside a little */
+}
+
+.description-title {
+	line-height: 2;
+	border-bottom: 1px solid #fff;
+}
+
+.services .columns {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+}
+
+.circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 25px;
+	background-color: #d3a9ab;
+}
+
+.section-title {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-form label {
+	color: #fff;
+	font-size: 20px;
 }
