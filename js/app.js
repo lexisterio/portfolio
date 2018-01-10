@@ -67,8 +67,8 @@ $(document).foundation();
 
     function popLightbox(currentIndex, currentObject) {
         //debugger;
-        window.scrollTo(0, 0);
-        document.body.style.overflow = "hidden";
+        window.scrollTo(0, 0); // scroll to the 0, 0, point put page to the top, then style to the body
+        document.body.style.overflow = "hidden"; // adding overflow hidden to body
 
         // turn on the lightbox
         let lightbox = document.querySelector('.lightbox');
@@ -79,7 +79,8 @@ $(document).foundation();
         let lightboxClose = lightbox.querySelector('.close-lightbox');
         let lightboxDesc = lightbox.querySelector('p');
 
-        //lightboxImg.src = "images/" + currentObject.images[currentIndex];
+
+        lightboxImg.src = this.src; //this is the current elememt you are clicking
         //lightboxDesc.innerHTML = currentObject.imageDescription[currentIndex];
 
         lightboxClose.addEventListener('click', closeLightbox, false);
@@ -88,6 +89,7 @@ $(document).foundation();
         // turn on the lightbox
         let lightbox = document.querySelector('.lightbox');
         lightbox.style.display = 'none';
+        document.body.style.overflow = "scroll";
     }
     theThumbnails.forEach(function (element, index) {
         //loop through and do stuff to each element at the top of the page

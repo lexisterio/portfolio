@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "leslieTitle";
+  src: url(fonts/HelveticaNeueLight.ttf) format("truetype");
+}
+s
 /*Class to help us visualize the grid*/
 body {
 	padding: 0;
@@ -59,12 +64,14 @@ h1 { /* This is a tag name so this style rule will apply to all tags of this nam
 	background-color: #255d6e;
 	color: #fff;
 	padding: 20px 3%;
+        font-family: 'Libre Baskerville', serif;
 	/* padding to push the content of the div inside a little */
 }
 
 .description-title {
 	line-height: 2;
 	border-bottom: 1px solid #fff;
+        font-family: "leslieTitle", sans-serif
 }
 
 .services .columns {
@@ -138,7 +145,4 @@ h1 { /* This is a tag name so this style rule will apply to all tags of this nam
 
 .lightbox-img {
 	display: block;
-}
-*{
-    font-family: 'Libre Baskerville', serif;
 }

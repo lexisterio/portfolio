@@ -7,6 +7,7 @@ $db = "portfolio_db";
 $conn = mysqli_connect($host, $user, $pass, $db);
 if (!$conn) {
     error_log('sumpin done gone wrong, son');
+    header("Location: /");
     exit;
 }
 error_log('connected, yo!');
@@ -54,7 +55,7 @@ if (isset($_POST["nameContact"])) {
 
     // Send
     mail($_POST['emailContact'], 'My portfolio contact', $message);
-    
+
     //Go back to the homepage
     header("Location: ../contact.html");
     exit;
